@@ -91,17 +91,17 @@
           <h1 class="title is-1 publication-title">Scireplicate-Bench: Benchmarking llms in Agent-driven Algorithmic Reproduction from Research Papers</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://keunhong.com">Yanzheng Xiang</a><sup>1</sup>,</span>
+              <a href="https://www.linkedin.com/in/yanzheng-xiang-9aa572282/">Yanzheng Xiang</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://utkarshsinha.com">Hanqi Yan</a><sup>1</sup>,</span>
+              <a href="https://hanqi-qi.github.io/">Hanqi Yan</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://jonbarron.info">Shuyin Ouyang</a><sup>1</sup>,
+              <a href="https://www.linkedin.com/in/shuyin-ouyang-b2059a224/">Shuyin Ouyang</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="http://sofienbouaziz.com">Lin Gui</a><sup>1</sup>,
+              <a href="https://sites.google.com/view/lin-gui/about-me">Lin Gui</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="https://www.danbgoldman.com">Yulan He</a><sup>1, 2</sup>,
+              <a href="https://sites.google.com/view/yulanhe/home">Yulan He</a><sup>1, 2</sup>,
             </span>
           </div>
 
@@ -252,31 +252,13 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
-          </p>
-          <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
-          </p>
-          <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            The evolution of Large Language Models (LLMs) has ushered in a transformative era in scientific discovery, positioning them as powerful tools for streamlining research, from idea generation to verification and publication writing.
+            This study evaluates large language models (LLMs) in generating code from algorithm descriptions from recent NLP papers. The task requires two key competencies: (1) algorithm comprehension: synthesizing information from papers and academic literature to understand implementation logic, and (2) coding expertise: identifying dependencies and correctly implementing necessary APIs. To facilitate rigorous evaluation, we introduce \textbf{SciReplicate-Bench}, a benchmark of 100 tasks from 36 NLP papers published in 2024, featuring detailed annotations and comprehensive test cases. 
+            Building on SciReplicate-Bench, we propose \textbf{Sci-Reproducer}, a multi-agent framework consisting of a Paper Agent that interprets algorithmic concepts from literature and a Code Agent that retrieves dependencies from repositories and implement solutions.
+            To assess algorithm understanding, we introduce \textit{reasoning graph accuracy}, which quantifies similarity between generated and reference reasoning graphs derived from code comments and structure.
+            For evaluating implementation quality, we employ \textit{execution accuracy}, \textit{CodeBLEU}, and repository dependency/API \textit{recall} metrics.
+            In our experiments, we evaluate various powerful Non-Reasoning LLMs and Reasoning LLMs as foundational models.
+            The best-performing LLM using \ModelName~achieves only 39\% \textit{execution accuracy}, highlighting the benchmark's difficulty.
           </p>
         </div>
       </div>
