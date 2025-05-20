@@ -306,6 +306,37 @@
       </div>
 </section>
 
+      
+<section class="section">
+<!--   <div class="container is-max-desktop"> -->
+  <div class="container">
+    <!-- Introduction -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Sci-Reproducer</h2>
+        <div class="content has-text-justified">
+          <img src="/scireplicate.github.io/static/images/method.png" alt="Framework Diagram">
+          <p class="center-text">Figure 2: The overview of the Sci-Reproducer.</p>
+          <img src="/scireplicate.github.io/static/images/action" alt="Framework Diagram">
+          <p class="center-text">Table 1: The pre-defined actions for the Paper Agent and the Code Agent.</p>
+          <p>
+            To address this task, we introduce Sci-Reproducer, a dual-agent framework designed for scientific paper methodology replication. As illustrated in Figure 2, Sci-Reproducer comprises a Paper Agent and a Code Agent that collaboratively work to replicate algorithms described in a given paper.
+          </p>
+          <p style="font-size: 20px;"><strong>Paper Agent</strong></p>
+          <p>
+            The Paper Agent incrementally builds an understanding of the target algorithm by executing predefined actions to query the literature context. 
+            After concluding that all necessary information has been collected, it generates a comprehensive report comprising key findings that fill in the missing components of the target algorithm's LaTeX source.
+          </p>
+          <p style="font-size: 20px;"><strong>Code Agent</strong></p>
+          <p>
+            The Code Agent integrates the target algorithm's LaTeX code with the Paper Agent's report to comprehensively understand the algorithm. 
+            It leverages actions to search the code repository for necessary dependencies that aid implementation. 
+            The agent can also browse websites for additional information and use a compiler to test and iteratively debug the code, ensuring proper execution by identifying and fixing syntax errors.
+          </p>
+        </div>
+      </div>
+</section>
+
 
 <!-- <section class="section">
   <div class="container is-max-desktop">
