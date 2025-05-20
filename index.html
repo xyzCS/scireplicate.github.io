@@ -285,8 +285,15 @@
           <img src="/scireplicate.github.io/static/images/dataset-overview.png" alt="Framework Diagram">
           <p class="center-text">Figure 1: The overview of the SciReplicate-Bench.</p>
           <p>
-            
-          </p>
+            The SciReplicate-Bench focuses on repository-level code generation, where each task is centered around implementing a specific function or class method.
+            For code generation, the following components are provided as inputs to LLMs:
+            <p>
+            <ul>
+              <li><em>Function signature:</em> the definition of the target function, including detailed descriptions of its input and output variables.</li>
+              <li><em>Algorithm LaTeX code:</em> The LaTeX code description of the target algorithm, typically located within a subsection or paragraph of the target paper.</li>
+              <li><em>Literature context:</em> the original paper along with its cited references, providing broader conceptual context.</li>
+              <li><em>Repository context:</em> all source files and code in the repository that inform or support the target implementation.</li>
+            </ul>
         </div>
       </div>
 </section>
@@ -464,10 +471,7 @@
           </p>
           <p>
             This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
+              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website.
           </p>
         </div>
       </div>
