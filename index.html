@@ -284,6 +284,7 @@
         <div class="content has-text-justified">
           <img src="/scireplicate.github.io/static/images/dataset-overview.png" alt="Framework Diagram">
           <p class="center-text">Figure 1: The overview of the SciReplicate-Bench.</p>
+          <p style="font-size: 20px;"><strong>Task Definition</strong></p>
           <p>
             The SciReplicate-Bench focuses on repository-level code generation, where each task is centered around implementing a specific function or class method.
             For code generation, the following components are provided as inputs to LLMs:
@@ -293,6 +294,13 @@
               <li><strong>Algorithm LaTeX code:</strong> the LaTeX code description of the target algorithm, typically located within a subsection or paragraph of the target paper.</li>
               <li><strong>Literature context:</strong> the original paper along with its cited references, providing broader conceptual context.</li>
               <li><strong>Repository context:</strong> all source files and code in the repository that inform or support the target implementation.</li>
+            </ul>
+          <p style="font-size: 20px;"><strong>Metrics</strong></p>
+          <ul>
+              <li><strong>Reasoning Graph Accuracy:</strong> it evaluate how well LLMs understand the logic and implementation of algorithms.</li>
+              <li><strong>Execution Accuracy:</strong> we integrate the generated code into the repository and execute it to obtain results. If all test cases match the reference results, we consider the code correct.</li>
+              <li><strong>CodeBLEU:</strong> it evaluates how similar the generated code is to reference code by using the traditional BLEU metric while incorporating syntactic information through abstract syntax trees (AST) and semantic understanding via data-flow graphs (DFG).</li>
+              <li><strong>Recall:</strong> it refers to the recall scores targeting intra-file dependencies, cross-file dependencies, and external APIs.</li>
             </ul>
         </div>
       </div>
