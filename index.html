@@ -298,9 +298,9 @@
           <p style="font-size: 20px;"><strong>Metrics</strong></p>
           <ul>
               <li><strong>Reasoning Graph Accuracy:</strong> it evaluate how well LLMs understand the logic and implementation of algorithms.</li>
-              <li><strong>Execution Accuracy:</strong> we integrate the generated code into the repository and execute it to obtain results. If all test cases match the reference results, we consider the code correct.</li>
+              <li><strong><a href="https://aclanthology.org/2023.findings-acl.23/" target="_blank">Execution Accuracy</a>:</strong> we integrate the generated code into the repository and execute it to obtain results. If all test cases match the reference results, we consider the code correct.</li>
               <li><strong><a href="https://arxiv.org/abs/2009.10297" target="_blank">CodeBLEU</a>: </strong> it evaluates how similar the generated code is to reference code by using the traditional BLEU metric while incorporating syntactic information through abstract syntax trees (AST) and semantic understanding via data-flow graphs (DFG).</li>
-              <li><strong>Recall:</strong> it refers to the recall scores targeting intra-file dependencies, cross-file dependencies, and external APIs.</li>
+              <li><strong><a href="https://arxiv.org/abs/2405.19856" target="_blank">Recall</a>:</strong> it refers to the recall scores targeting intra-file dependencies, cross-file dependencies, and external APIs.</li>
             </ul>
         </div>
       </div>
@@ -338,6 +338,28 @@
       </div>
 </section>
 
+<section class="section">
+<!--   <div class="container is-max-desktop"> -->
+  <div class="container">
+    <!-- Introduction -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Experimental Results</h2>
+        <div class="content has-text-justified">
+          <img src="/scireplicate.github.io/static/images/main_results.png" alt="Framework Diagram" style="width: 80%; height: auto; display: block; margin: 0 auto;">
+          <p class="center-text">Table 2: Performance evaluation on the SciReplicate-Bench. "Exe Acc" represents <em>execution accuracy</em> while "RG Acc" indicates <em>reasoning graph accuracy</em>.</p>
+          <p>
+            Table 2 displays Sci-Reproducer’s evaluation results and contributions of code/paper agent. The results offer the following key insights:
+          </p>
+          <ul>
+              <li><strong>LLMs struggles on SciReplicate-Bench:</strong> most LLMs perform poorly, even the best-performing model, Claude-Sonnet-3.7, only achieved 0.390 <em>execution accuracy</em>.</li>
+              <li><strong>LLMs can comprehend algorithm logic:</strong> most models are capable of understanding the core implementation logic of target algorithms (indicated by <em>reasoning graph accuracy</em>), even without any external assistance, with an average score of 0.731 in the ``No Agent'' setting.</li>
+              <li><strong>LLMs face challenges with actual implementation: </strong> although LLMs are capable of understanding algorithms, their performance in code generation remains suboptimal.</li>
+              <li><strong>Accurate dependency and API identification is crucial for code implementation:</strong> effectively recognizing and leveraging dependencies from the source repository and external APIs is essential for accurate code implementation.</li>
+            </ul>
+        </div>
+      </div>
+</section>
 
 <!-- <section class="section">
   <div class="container is-max-desktop">
