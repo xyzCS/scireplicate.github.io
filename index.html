@@ -315,9 +315,9 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Sci-Reproducer</h2>
         <div class="content has-text-justified">
-          <img src="/scireplicate.github.io/static/images/method.png" alt="Framework Diagram" style="width: 80%; height: auto; display: block; margin: 0 auto;">
+          <img src="/scireplicate.github.io/static/images/method.png" alt="Framework Diagram" style="width: 70%; height: auto; display: block; margin: 0 auto;">
           <p class="center-text">Figure 2: The overview of the Sci-Reproducer.</p>
-          <img src="/scireplicate.github.io/static/images/action.png" alt="Framework Diagram" style="width: 80%; height: auto; display: block; margin: 0 auto;">
+          <img src="/scireplicate.github.io/static/images/action.png" alt="Framework Diagram" style="width: 70%; height: auto; display: block; margin: 0 auto;">
           <p class="center-text">Table 1: The pre-defined actions for the Paper Agent and the Code Agent.</p>
           <p>
             To address this task, we introduce Sci-Reproducer, a dual-agent framework designed for scientific paper methodology replication. As illustrated in Figure 2, Sci-Reproducer comprises a Paper Agent and a Code Agent that collaboratively work to replicate algorithms described in a given paper.
@@ -346,7 +346,7 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Experimental Results</h2>
         <div class="content has-text-justified">
-          <img src="/scireplicate.github.io/static/images/main_results.png" alt="Framework Diagram" style="width: 80%; height: auto; display: block; margin: 0 auto;">
+          <img src="/scireplicate.github.io/static/images/main_results.png" alt="Framework Diagram" style="width: 70%; height: auto; display: block; margin: 0 auto;">
           <p class="center-text">Table 2: Performance evaluation on the SciReplicate-Bench. "Exe Acc" represents <em>execution accuracy</em> while "RG Acc" indicates <em>reasoning graph accuracy</em>.</p>
           <p>
             Table 2 displays Sci-Reproducer’s evaluation results and contributions of code/paper agent. The results offer the following key insights:
@@ -360,140 +360,26 @@
         </div>
       </div>
 </section>
+  </div>
+</section>
 
-<!-- <section class="section">
-  <div class="container is-max-desktop">
-
-    <div class="columns is-centered">
-
-      <!-- Visual Effects. -->
-<!--       <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
-          <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-          </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div> -->
-      <!--/ Visual Effects. -->
-
-      <!-- Matting. -->
-<!--       <div class="column">
-        <h2 class="title is-3">Matting</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-
-        </div>
-      </div>
-    </div> -->
-    <!--/ Matting. -->
-
-    <!-- Animation. -->
-<!--     <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
-
-        <!-- Interpolating. -->
-<!--         <h3 class="title is-4">Interpolating states</h3>
+<section class="section">
+<!--   <div class="container is-max-desktop"> -->
+  <div class="container">
+    <!-- Introduction -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Tool Usage Analysis</h2>
         <div class="content has-text-justified">
+          <img src="/scireplicate.github.io/static/images/tool.png" alt="Framework Diagram" style="width: 70%; height: auto; display: block; margin: 0 auto;">
+          <p class="center-text">Table 3: A grouped bar chart illustrating the frequency of tool usage by different models. The x-axis represents various actions, while the y-axis indicates the total number of times each tool was used on this dataset.</p>
           <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
-          </p>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
-            </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
-          </div>
-        </div>
-        <br/> -->
-        <!--/ Interpolating. -->
-
-        <!-- Re-rendering. -->
-<!--         <h3 class="title is-4">Re-rendering the input video</h3>
-        <div class="content has-text-justified">
-          <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
-        </div> -->
-        <!--/ Re-rendering. -->
-
-<!--       </div>
-    </div> --> 
-    <!--/ Animation. -->
-
-
-    <!-- Concurrent Work. -->
-<!--     <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
-
-        <div class="content has-text-justified">
-          <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
-          </p>
-          <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
-          </p>
-          <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
-          </p>
-          <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
+            <strong>Reasnoning LLMs tend to <a href="https://arxiv.org/abs/2502.08235" target="_blank">overthinking</a> which leads to limited improvement:</strong> As shown in Table 3, reasoning LLMs tend to rely more on internal deliberation rather than retrieving external information. Regarding code-related actions, reasoning LLMs use “SearchFile”, “SearchCodeItem”, and “SearchWeb” an average of 25.0, 3.3, and 0.0 times, respectively. In comparison, non-reasoning LLMs use these actions significantly more often, with averages of 210.4, 68.2, and 16.8 times, respectively.
+            Such over-reliance on internal reasoning hurts their overall performance: the <em>execution accuracy</em> of models such as o3-mini-high and o3-mini-low is comparable to that of gpt-4o-mini, despite their theoretical advantages.
           </p>
         </div>
       </div>
-    </div> -->
-    <!--/ Concurrent Work. -->
-
+</section>
   </div>
 </section>
 
@@ -518,13 +404,6 @@
 <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
-<!--       <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a> -->
     </div>
     <div class="columns is-centered">
       <div class="column is-8">
